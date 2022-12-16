@@ -1,6 +1,5 @@
 import * as alt from 'alt-server';
 // @ts-ignore
-import * as chat from 'chat';
 
 alt.log(`alt:V Server - Boilerplate Started`);
 
@@ -35,7 +34,3 @@ alt.onClient('auth', (player: alt.Player, auth: string) => {
     alt.emitClient(player, 'show:Menu', false);
 });
 
-chat.registerCmd('pos', (player: alt.Player) => {
-    alt.log(`POS: ${JSON.stringify(player.pos)}`);
-
-});
