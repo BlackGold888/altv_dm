@@ -8,7 +8,7 @@
         "build": "npm run clean && swc ./src -d ./resources --copy-files",
         "update": "altv-pkg d release",
         "windows": "npm run build && altv-server.exe",
-        "linux": "npm run build && ./start.sh",
+        "linux": "npm run build && ./altv-server.sh",
         "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe --convert-config-format\"",
         "dev": "npm run windev",
         "reinstall": "rimraf node_modules && npm install"
