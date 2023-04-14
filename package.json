@@ -3,6 +3,7 @@
     "version": "4.1.0",
     "description": "The Fastest Typescript Repo for alt:V",
     "main": "",
+    "types": "module",
     "scripts": {
         "clean": "rimraf ./resources",
         "build": "npm run clean && swc ./src -d ./resources --copy-files",

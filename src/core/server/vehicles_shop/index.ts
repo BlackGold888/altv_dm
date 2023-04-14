@@ -1,5 +1,5 @@
 import * as alt from 'alt-server';
-import { Vehicle, vehiclesApi } from '../vehicles';
+import { Vehicle, vehiclesApi } from '../vehicles/index.js';
 
 class VehiclesShop {
     public id: number;

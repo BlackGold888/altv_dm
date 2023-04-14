@@ -1,5 +1,5 @@
 import * as alt from 'alt-server';
-import { FractionsInfo } from '../auth';
+import { FractionsInfo } from '../auth/index.js'
 
 alt.on('playerDeath', (player: alt.Player, killer: alt.Player, weapon: number) => {
     // @ts-ignore

@@ -1,5 +1,5 @@
 import * as alt from 'alt-server';
-import { Item, itemsApi } from '../items';
+import { Item, itemsApi } from '../items/index.js';
 
 class Shop {
     public id: number;

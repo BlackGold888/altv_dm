@@ -1,7 +1,7 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import * as MenuFramework from '../menu/src/menu';
-
+import * as MenuFramework from '../menu/src/menu.js';
+import '../menu/index.js';
 alt.onServer('log:Console', handleLogConsole);
 
 function handleLogConsole(msg: string) {
