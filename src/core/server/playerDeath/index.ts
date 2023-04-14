@@ -22,6 +22,9 @@ const randomMessages = [
     'отпидарасил в рот',
     'У него сейчас бой',
     'сделал из него АСПИДА',
+    'промыл анал маленьким членом',
+    'промыл анал',
+    'ЗАЛИЛ в рот ХЛОМИДИЙ',
 ]
 
 alt.on('playerDeath', (player: alt.Player, killer: alt.Player, weapon: number) => {
