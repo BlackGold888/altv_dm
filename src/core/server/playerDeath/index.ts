@@ -32,8 +32,14 @@ alt.on('playerDeath', (player: alt.Player, killer: alt.Player, weapon: number) =
     const position = FractionsInfo[player.getMeta('fraction')].position;
     player.spawn(position.x, position.y, position.z, 0);
 
+    if(player.getMeta('vehicle')) {
+        player.getMeta<alt.Vehicle>('vehicle').destroy();
+    };
+
+    player.setMeta<alt.Vehicle>('vehicle', null);
+
     if (!killer) return;
-    const message: string = `${killer.name} ${randomMessages[Math.floor(Math.random() * randomMessages.length)]} ${player.name}`;
+    const message: string = `${killer.name} {80eb34}${randomMessages[Math.floor(Math.random() * randomMessages.length)]} {ffffff}${player.name}`;
     chat.broadcast(message);
     alt.emitAllClients("playerKill", { killerName: killer.name, killerGang: killer.getMeta('fraction'), victimName: player.name, victimGang: killer.getMeta('fraction'), weapon: weapon });
 })

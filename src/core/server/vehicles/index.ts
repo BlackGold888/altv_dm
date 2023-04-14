@@ -56,10 +56,16 @@ vehiclesApi.addVehicle(new Car(4, 'Rhino', 'Rhino', 999, 'rhino', 'car', ['shop'
 vehiclesApi.addVehicle(new Car(4, 'besra', 'besra', 999, 'besra', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'hunter', 'hunter', 999, 'hunter', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'khanjali', 'khanjali', 999, 'khanjali', 'car', ['shop']));
-vehiclesApi.addVehicle(new Car(4, 'rhino', 'rhino', 999, 'khanjali', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'rhino', 'rhino', 999, 'rhino', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'halftrack', 'halftrack', 999, 'halftrack', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'trailersmall2', 'trailersmall2', 999, 'trailersmall2', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'chernobog', 'chernobog', 999, 'chernobog', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'insurgent', 'insurgent', 999, 'insurgent', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'hydra', 'hydra', 999, 'hydra', 'car', ['shop']));
 vehiclesApi.addVehicle(new Car(4, 'lazer', 'lazer', 999, 'lazer', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'cerberus3', 'cerberus3', 999, 'cerberus3', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'valkyrie', 'valkyrie', 999, 'valkyrie', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'minitank', 'minitank', 999, 'minitank', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'scarab3', 'scarab3', 999, 'scarab3', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'veto', 'veto', 999, 'veto', 'car', ['shop']));
+vehiclesApi.addVehicle(new Car(4, 'speedo2', 'speedo2', 999, 'speedo2', 'car', ['shop']));

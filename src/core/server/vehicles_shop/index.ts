@@ -33,6 +33,13 @@ class VehiclesShop {
         console.log('spawnVehicle', vehicle);
         const veh = new alt.Vehicle(alt.hash(vehicle.model), this.spawnPosition.x, this.spawnPosition.y, this.spawnPosition.z, 0, 0, 0);
         player.setIntoVehicle(veh, 1);
+
+        if(player.getMeta('vehicle')) {
+            player.getMeta<alt.Vehicle>('vehicle').destroy();
+        };
+
+        player.setMeta<alt.Vehicle>('vehicle', veh);
+
         alt.emitClient(player, 'hide:vehicle:shop');
     };
 
