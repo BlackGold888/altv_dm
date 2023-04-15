@@ -43,3 +43,25 @@ alt.on('playerDeath', (player: alt.Player, killer: alt.Player, weapon: number) =
     chat.broadcast(message);
     alt.emitAllClients("playerKill", { killerName: killer.name, killerGang: killer.getMeta('fraction'), victimName: player.name, victimGang: killer.getMeta('fraction'), weapon: weapon });
 })
+
+chat.registerCmd("veh", (player, args)=>{
+    if (args.length === 0) {
+        chat.send(player, "Usage: /veh (vehicleModel)");
+        return;
+    }
+    try {
+        let vehicle = new alt.Vehicle(args[0], player.pos.x, player.pos.y, player.pos.z, 0, 0, 0);
+        let pvehs = player.getMeta("vehicles");
+        if (pvehs.length >= 3) {
+            let toDestroy = pvehs.pop();
+            if (toDestroy != null) {
+                toDestroy.destroy();
+            }
+        }
+        pvehs.unshift(vehicle);
+        player.setMeta("vehicles", pvehs);
+    } catch (e) {
+        chat.send(player, `{ff0000} Vehicle Model {ff9500}${args[0]} {ff0000}does not exist..`);
+        alt.log(e);
+    }
+});
