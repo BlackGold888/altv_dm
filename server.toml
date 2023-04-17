@@ -11,6 +11,6 @@ port = 7788
 resources = [ 'core', 'BetterNoClip', 'chat' ]
 tags = [ 'customTag1', 'customTag2', 'customTag3', 'customTag4' ]
 website = 'test.com'
-streamingDistance = 500
+streamingDistance = 1000
 # The migration distance for entities
-migrationDistance = 500
+migrationDistance = 1000
