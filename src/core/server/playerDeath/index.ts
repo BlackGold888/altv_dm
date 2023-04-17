@@ -50,6 +50,13 @@ chat.registerCmd("veh", (player, args)=>{
         return;
     }
     try {
+
+        if(player.getMeta('vehicle')) {
+            player.getMeta('vehicle').destroy();
+        };
+
+        player.setMeta('vehicle', null);
+
         let vehicle = new alt.Vehicle(args[0], player.pos.x, player.pos.y, player.pos.z, 0, 0, 0);
         let pvehs = player.getMeta("vehicles");
         if (pvehs.length >= 3) {
