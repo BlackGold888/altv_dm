@@ -47,9 +47,8 @@ alt.on('keydown', (key) => {
     switch (key) {
         //E
         case 0x45:
+        case 0x1B:
             toggleMenu();
             break;
-        case 0x1B:
-            MainBrowser.hidePage();
     }
 });
