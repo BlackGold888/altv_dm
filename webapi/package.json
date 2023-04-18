@@ -6,6 +6,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build & xcopy /s \"./dist\" \"..\\src\\core\\client\\web\" /Y",
+    "build:linux": "vite build & cp -r ./dist ../src/core/client/web",
     "preview": "vite preview"
   },
   "dependencies": {
