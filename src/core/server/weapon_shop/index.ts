@@ -43,10 +43,11 @@ class Shop {
     handlePlayerBuy = (player: alt.Player, weapon: string) => {
         alt.log(`Player ${player.name} bought ${weapon}`);
 
-        // @ts-ignore
-        const item: Item = this.weapons.find((w) => w.name === weapon);
-        if (!item) return;
-        item.use(player);
+        // // @ts-ignore
+        // const item: Item = this.weapons.find((w) => w.name === weapon);
+        // if (!item) return;
+        // item.use(player);
+        player.giveWeapon(alt.hash(weapon), 1000, true);
     }
 
     itemsInit = () => {

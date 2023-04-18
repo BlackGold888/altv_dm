@@ -5,7 +5,7 @@ import VehicleShop from './components/VehicleShop.jsx';
 import Auth from './components/Auth.jsx';
 
 function App() {
-    const [page, setPage] = useState('weapon_shop');
+    const [page, setPage] = useState('');
 
     const handlePageChange = (page) => {
         setPage(page);
@@ -24,7 +24,7 @@ function App() {
             case 'auth':
                 return <Auth handlePageChange={handlePageChange} />;
             case 'weapon_shop':
-                return <WeaponShop/>;
+                return <WeaponShop />;
             case 'vehicle_shop':
                 return <VehicleShop/>;
         }

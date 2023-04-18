@@ -6,21 +6,32 @@
     box-sizing: border-box;
     color: #1a1a1a;
     font-family: 'Roboto Condensed', sans-serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#root, .App {
+
+    background-color: transparent !important;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #ffffff;
+    background: transparent !important;
     width: 100vw;
     height: 100vh;
 }
 
 .container {
-    background-color: #fff;
-    width: 100vw;
-    height: 100vh;
+    background-color: transparent !important;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +42,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: transparent !important;
 }
