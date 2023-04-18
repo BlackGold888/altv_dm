@@ -50,7 +50,6 @@ chat.registerCmd("veh", (player, args)=>{
         return;
     }
     try {
-
         if(player.getMeta('vehicle')) {
             player.getMeta('vehicle').destroy();
         };

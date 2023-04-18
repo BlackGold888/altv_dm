@@ -1,0 +1,18 @@
+.col.usa {
+    background: url("https://wallpaperset.com/w/full/e/c/f/145797.jpg") center no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.col.ru {
+    background: url("https://images6.alphacoders.com/113/thumb-1920-1137508.jpg") center no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) inset;
+    transition: all .3s;
+}
+
+.col.ru:hover, .col.usa:hover {
+    box-shadow: inset 0 0 100px #000000;
+    transition: all .3s;
+    cursor: pointer;
+}

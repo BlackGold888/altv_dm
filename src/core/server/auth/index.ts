@@ -22,16 +22,17 @@ function handlePlayerConnect(player: alt.Player) {
     player.model = 'mp_m_freemode_01';
     player.spawn(36.19486618041992, 859.3850708007812, 197.71343994140625, 0);
     alt.emitClient(player, 'log:Console', 'alt:V Server - Boilerplate Started');
-    alt.emitClient(player, 'show:Menu', true);
+    alt.emitClient(player, 'client.auth.show');
 }
 
 alt.on('playerConnect', handlePlayerConnect);
 
 alt.onClient('auth', (player: alt.Player, auth: string) => {
+    console.log(auth);
     if (!FractionsInfo[auth]) return;
     player.setMeta('fraction', auth);
     player.model = FractionsInfo[auth].model;
     player.spawn(FractionsInfo[auth].position.x, FractionsInfo[auth].position.y, FractionsInfo[auth].position.z, 0);
-    alt.emitClient(player, 'show:Menu', false);
+    alt.emitClient(player, 'client.auth.hide');
 });
 
